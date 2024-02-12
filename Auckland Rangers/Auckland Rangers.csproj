@@ -22,4 +22,7 @@
     <None Remove="Resources\layout\Signin.xml" />
     <None Remove="Resources\layout\Signup.xml" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\drawable\" />
+  </ItemGroup>
 </Project>
