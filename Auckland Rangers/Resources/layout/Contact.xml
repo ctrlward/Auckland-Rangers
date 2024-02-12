@@ -139,11 +139,66 @@
     <!-- Restaurant Image 1 -->
     <ImageView
         android:id="@+id/imageViewRestaurant1"
-        android:layout_width="163dp"
-        android:layout_height="160dp"
+        android:layout_width="500dp"
+        android:layout_height="200dp"
         android:src="@drawable/restaurant1"
+        android:layout_below="@+id/buttonSend"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="1dp"/>
+
+    <!-- Store Email -->
+    <TextView
+        android:id="@+id/textViewStoreEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Restaurant Email"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/imageViewRestaurant1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:paddingStart="10dp"/>
+
+     <TextView
+        android:id="@+id/textViewStoreEmailAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rangers.Auckland@gmail.com"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/textViewStoreEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:paddingStart="10dp"/>
+
+    <!-- Store Address -->
+    <TextView
+        android:id="@+id/textViewStoreAddress1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="238 Queen Street, Auckland CBD"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/textViewStoreEmailAddress"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:paddingStart="10dp"/>
+    <TextView
+        android:id="@+id/textViewStoreAddress2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Auckland 1010"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/textViewStoreAddress1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:paddingStart="10dp"/>
+
 
     <!-- Navigation Section -->
     <LinearLayout
