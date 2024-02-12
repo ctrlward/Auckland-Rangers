@@ -19,7 +19,7 @@
     <None Remove="Resources\layout\PaymentOption.xml" />
     <None Remove="Resources\layout\Profile.xml" />
     <None Remove="Resources\layout\Reservation.xml" />
-    <None Remove="Resources\layout\Signin.xml" />
+    <None Remove="Resources\layout\SignIn1.xml" />
     <None Remove="Resources\layout\Signup.xml" />
   </ItemGroup>
   <ItemGroup>
