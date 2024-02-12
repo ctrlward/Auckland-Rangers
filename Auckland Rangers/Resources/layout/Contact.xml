@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     android:background="@android:color/white">   
 
+
     <!-- Title : Contact -->
     <TextView
         android:id="@+id/textViewContact"
@@ -175,6 +176,18 @@
 
     <!-- Store Address -->
     <TextView
+        android:id="@+id/textViewStoreAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/textViewStoreEmailAddress"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:paddingStart="10dp"/>
+    <TextView
         android:id="@+id/textViewStoreAddress1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -182,9 +195,9 @@
         android:textSize="20sp"
         android:textStyle="bold"
         android:textColor="@android:color/black"
-        android:layout_below="@+id/textViewStoreEmailAddress"
+        android:layout_below="@+id/textViewStoreAddress"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="3dp"
+        android:layout_marginTop="1dp"
         android:paddingStart="10dp"/>
     <TextView
         android:id="@+id/textViewStoreAddress2"
@@ -196,9 +209,10 @@
         android:textColor="@android:color/black"
         android:layout_below="@+id/textViewStoreAddress1"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="3dp"
+        android:layout_marginTop="1dp"
         android:paddingStart="10dp"/>
 
+    <!-- Opening Hours -->
 
     <!-- Navigation Section -->
     <LinearLayout
