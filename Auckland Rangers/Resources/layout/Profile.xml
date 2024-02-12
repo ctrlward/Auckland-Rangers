@@ -1,1 +1,68 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?> 
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/widget0"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <ImageView
+        android:id="@+id/imgFoods"
+        android:layout_width="215.5dp"
+        android:layout_height="160dp"
+        android:layout_marginLeft="190dp"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Auckland Rangers"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:id="@+id/txtName"
+        android:textColor="@android:color/background_dark"
+        android:textSize="40dp"
+        android:textStyle="bold" 
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Discover and Enjoy Food"
+        android:gravity="center"
+        android:layout_height="35dp"
+        android:textSize="20dp"
+         
+        android:textColor="@android:color/background_dark"
+        android:id="@+id/txt1"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:text="My Account"
+        android:gravity="center"
+        android:layout_height="80dp"
+        android:textSize="30dp" 
+        android:textColor="@android:color/background_dark"
+        android:id="@+id/txtAccount"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:textSize="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@android:color/background_dark"
+        android:id="@+id/txtUsername"
+        android:textColorHint="@android:color/darker_gray"
+        android:hint="Username"
+        android:background="#ffe2e4f7" 
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:textSize="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@android:color/background_dark"
+        android:id="@+id/txtUsername"
+        android:hint="Password" 
+        android:textColorHint="@android:color/darker_gray"
+        android:background="#ffe2e4f7"
+        />
+
+</LinearLayout>

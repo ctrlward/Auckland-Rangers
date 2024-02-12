@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 android:id="@+id/widget0"
     android:orientation="vertical"
-    android:background=""
+    android:background="@android:color/white"
 android:layout_width="fill_parent"
 android:layout_height="fill_parent">
     <ImageView
@@ -16,17 +16,20 @@ android:layout_height="fill_parent">
         android:text=":Auckland Rangers"
         android:layout_height="70dp"
         android:id="@+id/txtName"
+        android:textColor="@android:color/background_dark" 
         />
     <TextView
         android:layout_width="match_parent"
         android:text="Discover and Enjoy Food"
         android:layout_height="35dp"
+        android:textColor="@android:color/background_dark"
         android:id="@+id/txt1"
         />
     <TextView
         android:layout_width="match_parent"
         android:text="My Account"
         android:layout_height="80dp"
+        android:textColor="@android:color/background_dark"
         android:id="@+id/txtAccount"
         />
 </LinearLayout>
