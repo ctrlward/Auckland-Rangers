@@ -11,7 +11,7 @@
     <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
   </PropertyGroup>
   <ItemGroup>
-    <None Remove="Resources\layout\AddEdit.xml" />
+    <None Remove="Resources\layout\AddEdit1.xml" />
     <None Remove="Resources\layout\Contact1.xml" />
     <None Remove="Resources\layout\FoodDescription.xml" />
     <None Remove="Resources\layout\Menu.xml" />
