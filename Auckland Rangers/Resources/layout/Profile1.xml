@@ -1,1 +1,129 @@
-﻿<?xml version="1.0" encoding="utf-8" ?> 
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget0"
+    android:background="@android:color/white"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="163dp"
+        android:layout_height="160dp"
+        android:layout_gravity="center"
+        android:src="@drawable/aucklandrangerslogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Auckland Rangers"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:id="@+id/txtName"
+        android:textColor="@android:color/background_dark"
+        android:textSize="40dp"
+        android:textStyle="bold"    
+        android:layout_marginTop="150dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Discover and Enjoy Food"
+        android:gravity="center"
+        android:layout_height="35dp"
+        android:textSize="20dp"
+        android:textColor="@android:color/background_dark"
+        android:id="@+id/txt1"
+        android:layout_marginTop="210dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:text="My Account"
+        android:gravity="center"
+        android:layout_height="80dp"
+        android:textSize="30dp"
+        android:textColor="@android:color/background_dark"
+        android:id="@+id/txtAccount"
+        android:layout_marginTop="250dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textSize="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@android:color/background_dark"
+        android:id="@+id/txtUsername"
+        android:textColorHint="@android:color/darker_gray"
+        android:hint="Username"
+        android:background="#ffe2e4f7" 
+        android:layout_marginTop="330dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textSize="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@android:color/background_dark"
+        android:id="@+id/txtPassword"
+        android:hint="Password"
+        android:textColorHint="@android:color/darker_gray"
+        android:background="#ffe2e4f7"
+        android:layout_marginTop="400dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textSize="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@android:color/background_dark"
+        android:id="@+id/txtFirstname"
+        android:hint="First Name"
+        android:textColorHint="@android:color/darker_gray"
+        android:background="#ffe2e4f7"
+        android:layout_marginTop="470dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textSize="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@android:color/background_dark"
+        android:id="@+id/txtLastname"
+        android:hint="Last Name"
+        android:textColorHint="@android:color/darker_gray"
+        android:background="#ffe2e4f7"
+        android:layout_marginTop="540dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textSize="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@android:color/background_dark"
+        android:id="@+id/txtEmail"
+        android:hint="Email"
+        android:textColorHint="@android:color/darker_gray"
+        android:background="#ffe2e4f7"
+        android:layout_marginTop="610dp"
+        />
+    <Button
+        android:layout_width="240dp"
+        android:layout_height="80dp"
+        android:id="@+id/btnUpdate"
+        android:layout_marginTop="740dp"
+        android:layout_marginLeft="20dp"
+         />
+    <Button
+        android:layout_width="240dp"
+        android:layout_height="80dp"
+        android:id="@+id/btnDeleteAccount"  
+        android:layout_marginTop="740dp"
+        android:layout_marginLeft="340dp"/>
+
+
+
+</RelativeLayout>
