@@ -1,1 +1,79 @@
-﻿<?xml version="1.0" encoding="utf-8" ?> 
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <!-- Back Button -->
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textColor="@android:color/black"
+        android:background="@android:color/transparent"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Title : Reservation List -->
+    <TextView
+        android:id="@+id/textViewReservation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reservation List"
+        android:padding="40dp"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/buttonBack"
+        android:layout_Horizontal="true"
+        android:layout_marginTop="16dp" />
+   
+
+    <EditText
+        android:id="@+id/editTextLastName"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:hint=" Lists"
+        android:background="@android:color/darker_gray"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/textViewReservation"
+        android:layout_marginTop="1dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp" />
+    
+    <Button
+        android:id="@+id/buttonAddEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add/Edit List"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:background="@android:color/holo_blue_light"
+        android:textColor="@android:color/white"
+        android:padding="16dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/editTextLastName"
+        android:layout_centerHorizontal="true" />
+    
+    <Button
+        android:id="@+id/buttonDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:background="@android:color/holo_blue_light"
+        android:textColor="@android:color/white"
+        android:padding="16dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/buttonAddEdit"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
