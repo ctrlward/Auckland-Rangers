@@ -12,7 +12,7 @@
   </PropertyGroup>
   <ItemGroup>
     <None Remove="Resources\layout\AddEdit.xml" />
-    <None Remove="Resources\layout\Contact.xml" />
+    <None Remove="Resources\layout\Contact1.xml" />
     <None Remove="Resources\layout\FoodDescription.xml" />
     <None Remove="Resources\layout\Menu.xml" />
     <None Remove="Resources\layout\Orderdetail.xml" />
@@ -21,8 +21,5 @@
     <None Remove="Resources\layout\Reservation.xml" />
     <None Remove="Resources\layout\SignIn1.xml" />
     <None Remove="Resources\layout\Signup.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Resources\drawable\" />
   </ItemGroup>
 </Project>
