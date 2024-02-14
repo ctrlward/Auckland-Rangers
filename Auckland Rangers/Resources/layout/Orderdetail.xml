@@ -28,6 +28,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp" />
 
+    
     <!-- Header Section -->
     <TextView
         android:id="@+id/textViewDate"
