@@ -116,13 +116,22 @@
         android:id="@+id/btnUpdate"
         android:layout_marginTop="740dp"
         android:layout_marginLeft="20dp"
+        android:background="@android:color/white"
+        android:text="Update"
+        android:textSize="25dp"
+        android:textColor="@android:color/background_dark"
+       
          />
     <Button
         android:layout_width="240dp"
         android:layout_height="80dp"
         android:id="@+id/btnDeleteAccount"  
         android:layout_marginTop="740dp"
-        android:layout_marginLeft="340dp"/>
+        android:layout_marginLeft="340dp"
+        android:background="@android:color/holo_blue_light"
+        android:text="Delete Account"
+        android:textSize="25dp"
+        android:textColor="@android:color/white"/>
 
 
 
