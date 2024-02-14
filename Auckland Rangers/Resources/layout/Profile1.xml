@@ -10,7 +10,7 @@
         android:layout_width="163dp"
         android:layout_height="160dp"
         android:layout_gravity="center"
-        android:src="@drawable/aucklandrangerslogo"
+        android:src="@drawable/aucklandrangerslogo2"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="1dp"/>
     <TextView
