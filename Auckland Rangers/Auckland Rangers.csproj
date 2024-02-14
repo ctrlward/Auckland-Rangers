@@ -19,7 +19,7 @@
     <None Remove="Resources\layout\Menu.xml" />
     <None Remove="Resources\layout\Orderdetail.xml" />
     <None Remove="Resources\layout\PaymentOption.xml" />
-    <None Remove="Resources\layout\Profile.xml" />
+    <None Remove="Resources\layout\Profile1.xml" />
     <None Remove="Resources\layout\Reservation.xml" />
     <None Remove="Resources\layout\SignIn1.xml" />
     <None Remove="Resources\layout\Signup.xml" />
