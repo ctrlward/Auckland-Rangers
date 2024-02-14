@@ -11,8 +11,11 @@
     <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
   </PropertyGroup>
   <ItemGroup>
-    <None Remove="Resources\drawable\mybutton.xml" />
-    <None Remove="Resources\drawable\textshape.xml" />
+    <None Remove="Resources\drawable\blue_button.xml" />
+    <None Remove="Resources\drawable\gray_button.xml" />
+    <None Remove="Resources\drawable\images_round.xml" />
+    <None Remove="Resources\drawable\light_blue_color_round.xml" />
+    <None Remove="Resources\drawable\white_button_border.xml" />
     <None Remove="Resources\layout\AddEdit1.xml" />
     <None Remove="Resources\layout\Contact1.xml" />
     <None Remove="Resources\layout\FoodDescription.xml" />

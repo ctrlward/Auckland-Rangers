@@ -4,98 +4,120 @@
     android:layout_height="match_parent"
     android:background="@android:color/white">
 
-    <!-- Company Logo -->
-    <ImageView
-        android:id="@+id/imageViewLogo"
-        android:layout_width="163dp"
-        android:layout_height="160dp"
-        android:src="@drawable/aucklandrangerslogo"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="1dp"/>
+    <FrameLayout
+    android:layout_width="550dp"
+    android:layout_height="700dp"
+    android:layout_marginTop="30dp"
+    android:layout_marginStart="40dp"
+    android:layout_marginEnd="40dp"
+    android:background="@drawable/light_blue_color_round">
 
-    <!-- Title : Company -->
-    <TextView
-        android:id="@+id/textViewTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Auckland Rangers"
-        android:textSize="40sp"
-        android:textStyle="bold"
-        android:textColor="@android:color/black"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/imageViewLogo"
-        android:layout_marginTop="2dp" />
-
-    <TextView
-        android:id="@+id/textViewTitle1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Discover and Enjoy Food"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:textColor="@android:color/black"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/textViewTitle"
-        android:layout_marginTop="5dp" />
-
-    <TextView
-        android:id="@+id/textViewMyAccount"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="My Account"
-        android:textSize="40sp"
-        android:textStyle="bold"
-        android:textColor="@android:color/black"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/textViewTitle1"
-        android:layout_marginTop="50dp" />
-
-    <!-- Username EditText -->
-    <EditText
-        android:id="@+id/editTextUsername"
+    <!-- Your existing layout -->
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Username"
-        android:background="@android:color/darker_gray"
-        android:textSize="50sp"
-        android:textStyle="bold"
-        android:layout_below="@id/textViewMyAccount"
-        android:layout_marginTop="60dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginEnd="40dp" />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <!-- Password EditText -->
-    <EditText
-        android:id="@+id/editTextPassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Password"
-        android:background="@android:color/darker_gray"
-        android:inputType="textPassword"
-        android:textSize="50sp"
-        android:textStyle="bold"
-        android:layout_below="@+id/editTextUsername"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginEnd="40dp" />
+        <!-- Company Logo -->
+            <ImageView
+                android:id="@+id/imageViewLogo"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:src="@drawable/aucklandrangerslogo3"
+                android:background="@drawable/images_round"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"/>
 
-    <!-- Header Section -->
-    <TextView
-        android:id="@+id/textViewForgot"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Forgot Username or Password?"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:textColor="@android:color/holo_red_light"
-        android:layout_below="@+id/editTextPassword"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginEnd="40dp"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
-        android:paddingBottom="16dp" />
+        <!-- Title : Company -->
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Auckland Rangers"
+                android:textSize="50sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/imageViewLogo"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/textViewTitle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Discover and Enjoy Food"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/textViewTitle"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/textViewMyAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Account"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/textViewTitle1"
+                android:layout_marginTop="25dp" />
+
+        <!-- Username EditText -->
+            <EditText
+                android:id="@+id/editTextUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="  Username*"
+                android:textColorHint="@android:color/darker_gray"
+                android:background="@drawable/white_button_border"
+                android:textSize="40sp"    
+                android:layout_below="@id/textViewMyAccount"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"/>
+
+        <!-- Password EditText -->
+            <EditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=" Password*"
+                android:textColorHint="@android:color/darker_gray"
+                android:background="@drawable/white_button_border"
+                android:inputType="textPassword"
+                android:textSize="40sp"              
+                android:layout_below="@+id/editTextUsername"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"/>
+
+            <!-- Header Section -->
+            <TextView
+                android:id="@+id/textViewForgot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forgot Username or Password?"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/holo_red_light"
+                android:layout_below="@+id/editTextPassword"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="16dp" />
+
+            </RelativeLayout>
+    </FrameLayout>    
 
     <!-- Navigation Selection -->
     <LinearLayout
@@ -104,8 +126,8 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:background="@android:color/white"
-        android:padding="16dp"
-        android:layout_margin="16dp"
+        android:padding="16dp"        
+        android:layout_marginTop="40dp"
         android:layout_alignParentBottom="true">
 
         <Button
@@ -114,12 +136,13 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Sign Up"
-            android:background="@android:color/white"
+            android:background="@drawable/white_button_border"
             android:textColor="@android:color/black"
             android:padding="16dp"
             android:layout_margin="16dp"
-            android:textSize="20sp"
-            android:textStyle="bold"/>/>
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"/>/>
 
         <Button
             android:id="@+id/buttonLogin"
@@ -127,12 +150,13 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Login"
-            android:background="@android:color/holo_blue_light"
+            android:background="@drawable/blue_button"
             android:textColor="@android:color/white"
             android:padding="16dp"
             android:layout_margin="16dp"
-            android:textSize="20sp"
-            android:textStyle="bold"/>
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"/>
     </LinearLayout>
 
 </RelativeLayout>
