@@ -128,7 +128,7 @@
         />
 
     <Button
-        android:layout_width="240dp"
+        android:layout_width="260dp"
         android:layout_height="80dp"
         android:id="@+id/btnUpdate"
         android:layout_marginTop="740dp"
@@ -141,11 +141,11 @@
        
          />
     <Button
-        android:layout_width="240dp"
+        android:layout_width="260dp"
         android:layout_height="80dp"
         android:id="@+id/btnDeleteAccount"  
         android:layout_marginTop="740dp"
-        android:layout_marginLeft="340dp"
+        android:layout_marginLeft="320dp"
         android:background="@drawable/light_blue_color_round"
         android:text="Delete Account"
         android:textSize="25dp"
