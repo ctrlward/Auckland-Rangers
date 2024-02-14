@@ -36,7 +36,7 @@
         android:layout_width="match_parent"
         android:layout_height="400dp"
         android:hint=" Lists"
-        android:background="@android:color/darker_gray"
+        android:background="@drawable/gray_button"
         android:textSize="30sp"
         android:textStyle="bold"
         android:layout_below="@+id/textViewReservation"
@@ -48,32 +48,34 @@
         android:id="@+id/buttonAddEdit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Add/Edit List"
-        android:textSize="25sp"
+        android:text="Add / Edit"
+        android:textSize="35sp"
         android:textStyle="bold"
-        android:background="@android:color/holo_blue_light"
+        android:background="@drawable/blue_button"
         android:textColor="@android:color/white"
         android:padding="16dp"
         android:layout_marginStart="40dp"
         android:layout_marginEnd="40dp"
         android:layout_marginTop="50dp"
         android:layout_below="@+id/editTextLastName"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="false"/>
     
     <Button
         android:id="@+id/buttonDelete"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Delete"
-        android:textSize="25sp"
+        android:textSize="35sp"
         android:textStyle="bold"
-        android:background="@android:color/holo_blue_light"
+        android:background="@drawable/blue_button"
         android:textColor="@android:color/white"
         android:padding="16dp"
         android:layout_marginStart="40dp"
         android:layout_marginEnd="40dp"
         android:layout_marginTop="30dp"
         android:layout_below="@+id/buttonAddEdit"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="false"/>
 
 </RelativeLayout>
