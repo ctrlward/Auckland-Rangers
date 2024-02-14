@@ -36,90 +36,108 @@
         />
     <TextView
         android:layout_width="match_parent"
-        android:text="My Account"
+        android:text="My Profile"
         android:gravity="center"
         android:layout_height="80dp"
         android:textSize="30dp"
         android:textColor="@android:color/background_dark"
         android:id="@+id/txtAccount"
         android:layout_marginTop="250dp"
+        android:textStyle="bold" 
         />
-    <TextView
+    <EditText
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="60dp"
         android:textSize="25dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:textColor="@android:color/background_dark"
         android:id="@+id/txtUsername"
         android:textColorHint="@android:color/darker_gray"
-        android:hint="Username"
-        android:background="#ffe2e4f7" 
+        android:hint="  Username*"
+        android:background="@drawable/white_button_border" 
         android:layout_marginTop="330dp"
         />
-    <TextView
+    <EditText
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="60dp"
         android:textSize="25dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:textColor="@android:color/background_dark"
         android:id="@+id/txtPassword"
-        android:hint="Password"
+        android:hint="  Password*"
         android:textColorHint="@android:color/darker_gray"
-        android:background="#ffe2e4f7"
-        android:layout_marginTop="400dp"
+        android:background="@drawable/white_button_border"
+        android:layout_marginTop="410dp"
         />
-    <TextView
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/txtPassword">
+        <EditText
+            android:id="@+id/editTextFirstName"
+            android:layout_width="230dp"
+            android:layout_height="60dp"
+            android:hint="  First Name*"
+            android:textColorHint="@android:color/darker_gray"
+            android:background="@drawable/white_button_border"
+            android:textSize="25sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"/>
+
+        <EditText
+            android:id="@+id/editTextLastName"
+            android:layout_width="317.5dp"
+            android:layout_height="60dp"
+            android:hint="  Last Name*"
+            android:layout_toRightOf="@+id/editTextFirstName"
+            android:textColorHint="@android:color/darker_gray"
+            android:background="@drawable/white_button_border"
+            android:textSize="25sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"/>
+        </RelativeLayout>
+        <EditText
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="60dp"
         android:textSize="25dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:textColor="@android:color/background_dark"
-        android:id="@+id/txtFirstname"
-        android:hint="First Name"
+        android:id="@+id/txtPhone"
+        android:hint="  Mobile Number*"
         android:textColorHint="@android:color/darker_gray"
-        android:background="#ffe2e4f7"
-        android:layout_marginTop="470dp"
+        android:background="@drawable/white_button_border"
+        android:layout_marginTop="570dp"
         />
 
-    <TextView
+    <EditText
         android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:textSize="25dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:textColor="@android:color/background_dark"
-        android:id="@+id/txtLastname"
-        android:hint="Last Name"
-        android:textColorHint="@android:color/darker_gray"
-        android:background="#ffe2e4f7"
-        android:layout_marginTop="540dp"
-        />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="60dp"
         android:textSize="25dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:textColor="@android:color/background_dark"
         android:id="@+id/txtEmail"
-        android:hint="Email"
+        android:hint="  Email*"
         android:textColorHint="@android:color/darker_gray"
-        android:background="#ffe2e4f7"
-        android:layout_marginTop="610dp"
+        android:background="@drawable/white_button_border"
+        android:layout_marginTop="650dp"
         />
+
     <Button
         android:layout_width="240dp"
         android:layout_height="80dp"
         android:id="@+id/btnUpdate"
         android:layout_marginTop="740dp"
         android:layout_marginLeft="20dp"
-        android:background="@android:color/white"
+        android:background="@drawable/white_button_border"
         android:text="Update"
         android:textSize="25dp"
         android:textColor="@android:color/background_dark"
+        android:textAllCaps="false"
        
          />
     <Button
@@ -128,11 +146,13 @@
         android:id="@+id/btnDeleteAccount"  
         android:layout_marginTop="740dp"
         android:layout_marginLeft="340dp"
-        android:background="@android:color/holo_blue_light"
+        android:background="@drawable/light_blue_color_round"
         android:text="Delete Account"
         android:textSize="25dp"
-        android:textColor="@android:color/white"/>
+        android:textColor="@android:color/white"
+        android:textAllCaps="false"/>
 
 
 
 </RelativeLayout>
+    
