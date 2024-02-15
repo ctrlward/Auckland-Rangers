@@ -28,89 +28,195 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp" />
 
-    
-    <!-- Header Section -->
-    <TextView
-        android:id="@+id/textViewDate"
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Date: DD-MM-YYYY"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:textColor="@android:color/black"
-        android:layout_above="@+id/textViewOrderNumber"
-        android:layout_Horizontal="true"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
-        android:paddingTop="8dp"
-        android:paddingBottom="8dp" />
+        android:orientation="horizontal"
+        android:layout_above="@+id/relativeLayoutOrderNumber"
+        android:id="@+id/relativeLayoutDate">
 
-    <TextView
-        android:id="@+id/textViewOrderNumber"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Order Number: #001"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:textColor="@android:color/black"
-        android:layout_above="@+id/textViewSubtotal"
-        android:layout_Horizontal="true"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
-        android:paddingBottom="8dp" />
+        <TextView
+            android:id="@+id/textViewDate"
+            android:layout_width="230dp"
+            android:layout_height="40dp"
+            android:text="Date"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"            
+            android:gravity="center_vertical|start"
+            android:paddingStart="16dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginStart="20dp"/>
+        <TextView
+            android:id="@+id/textViewCurrentDate"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:text="dd-mm-yyyy"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/textViewDate"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"            
+            android:gravity="center_vertical|start"
+            android:paddingStart="16dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginStart="10dp"/>        
+    </RelativeLayout>
 
-    <TextView
-        android:id="@+id/textViewSubtotal"
-        android:layout_width="wrap_content"
+    <!-- Total Amount -->
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Subtotal: $0.00"
-        android:textSize="18sp"
-        android:textColor="@android:color/black"
-        android:layout_above="@+id/textViewGST"
-        android:layout_Horizontal="true"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
-        android:paddingBottom="8dp" />
-
-    <TextView
-        android:id="@+id/textViewGST"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="GST: $0.00"
-        android:textSize="18sp"
-        android:textColor="@android:color/black"
-        android:layout_above="@+id/textViewTotal"
-        android:layout_Horizontal="true"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
-        android:paddingBottom="8dp" />
-
-    <TextView
-        android:id="@+id/textViewTotal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Total: $0.00"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:textColor="@android:color/black"
+        android:orientation="horizontal"
         android:layout_above="@+id/buttonProceedToPayment"
-        android:layout_Horizontal="true"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
-        android:paddingBottom="16dp" />
+        android:id="@+id/relativeLayoutTotal">
 
+        <TextView
+            android:id="@+id/textViewTotal"
+            android:layout_width="230dp"
+            android:layout_height="50dp"
+            android:text="TOTAL"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"            
+            android:gravity="center_vertical|start"
+            android:paddingStart="16dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginStart="20dp"/>
+        <TextView
+            android:id="@+id/textViewTotalAmount"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:text="$ "
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/textViewTotal"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"            
+            android:gravity="center_vertical|start"
+            android:paddingStart="16dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginStart="10dp"/>        
+    </RelativeLayout>
+
+    <!-- GST 15% -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@+id/relativeLayoutTotal"
+        android:id="@+id/relativeLayoutGST">
+
+        <TextView
+            android:id="@+id/textViewGST"
+            android:layout_width="230dp"
+            android:layout_height="40dp"
+            android:text="GST 15%"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"            
+            android:gravity="center_vertical|start"
+            android:paddingStart="16dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginStart="20dp"/>
+        <TextView
+            android:id="@+id/textViewTotalGST"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:text="$ "
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/textViewGST"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"            
+            android:gravity="center_vertical|start"
+            android:paddingStart="16dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginStart="10dp"/>        
+    </RelativeLayout>
+
+    <!-- SUBTOTAL -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@+id/relativeLayoutGST"
+        android:id="@+id/relativeLayoutSubtotal">
+
+        <TextView
+            android:id="@+id/textViewSubTotal"
+            android:layout_width="230dp"
+            android:layout_height="40dp"
+            android:text="Subtotal"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"            
+            android:gravity="center_vertical|start"
+            android:paddingStart="16dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginStart="20dp"/>
+        <TextView
+            android:id="@+id/textViewSubTotalAmount"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:text="$ "
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/textViewSubTotal"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"            
+            android:gravity="center_vertical|start"
+            android:paddingStart="16dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginStart="10dp"/>        
+    </RelativeLayout>
+
+    <!-- Order Number -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@+id/relativeLayoutSubtotal"
+        android:id="@+id/relativeLayoutOrderNumber">
+
+        <TextView
+            android:id="@+id/textViewOrderNumber"
+            android:layout_width="230dp"
+            android:layout_height="40dp"
+            android:text="Order #"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"            
+            android:gravity="center_vertical|start"
+            android:paddingStart="16dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginStart="20dp"/>
+        <TextView
+            android:id="@+id/textViewCurrentOrderNumber"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:text="###### "
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/textViewOrderNumber"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"            
+            android:gravity="center_vertical|start"
+            android:paddingStart="16dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginStart="10dp"/>        
+    </RelativeLayout>
+    
     <!-- Proceed to Payment Button -->
     <Button
         android:id="@+id/buttonProceedToPayment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Proceed to Payment"
-        android:background="@android:color/holo_blue_light"
+        android:background="@drawable/light_blue_color_round"
         android:textColor="@android:color/white"
+        android:textSize="25sp"
         android:padding="16dp"
+        android:textStyle="bold"
         android:layout_margin="16dp"
         android:layout_above="@+id/navigationSection"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="false"/>
 
     <!-- Navigation Section -->
     <LinearLayout
@@ -120,7 +226,7 @@
         android:orientation="horizontal"
         android:background="@android:color/white"
         android:padding="16dp"
-        android:layout_margin="16dp"
+        android:layout_margin="6dp"
         android:layout_alignParentBottom="true">
 
         <Button
