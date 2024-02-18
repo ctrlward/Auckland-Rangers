@@ -17,7 +17,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"/>
     <ImageView
-        android:src="@drawable/burger"
+        android:src="@drawable/pasta"
         android:layout_width="800dp"
         android:layout_height="300dp"
         android:id="@+id/imageView1" />
@@ -25,7 +25,7 @@
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:layout_marginTop="300dp"
-        android:text="  Super Burger                    $12.99"
+        android:text="  Mega Pasta                      $24.99"
         android:textColor="#ff000000"
         android:textSize="35dp"
         android:textStyle="bold"
@@ -43,7 +43,7 @@
         android:layout_width="518.5dp"
         android:layout_height="50dp"
         android:layout_marginTop="400dp"
-        android:text="Minced beef, bbq sauce, beef stock cube,cheese, eggs, garlic and bacon"
+        android:text="fresh basil, onion, garlic, tomatoes, olive oil, red wine, dried spaghetti and Parmesan cheese."
         android:textColor="#ff000000"
         android:textSize="20dp"
         android:layout_marginLeft="50dp"
@@ -58,10 +58,10 @@
         android:textSize="20dp"
         android:layout_marginLeft="50dp"/>
     <TextView
-        android:layout_width="518.5dp"
+        android:layout_width="491.5dp"
         android:layout_height="200dp"
         android:layout_marginTop="500dp"
-        android:text="combine the minced beef, BBQ sauce, crumbled beef stock cube, minced garlic, and season with salt and pepper to taste.Grill burger patties for 4-5 minutes on each side or until desired doneness; during the last few minutes, add a slice of cheese to each patty to melt.Assemble burgers by placing a cooked patty with melted cheese on the bottom bun, top with bacon slice and fried egg."
+        android:text="Cook pasta according to package instructions. In a skillet, sauté minced garlic in olive oil until fragrant, then add diced tomatoes, dried oregano, salt, and pepper, simmering for 10-15 minutes. Toss cooked pasta with the sauce until well-coated, then serve hot."
         android:textColor="#ff000000"
         android:textSize="20dp"
         android:layout_marginLeft="50dp"
