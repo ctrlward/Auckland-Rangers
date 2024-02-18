@@ -11,6 +11,9 @@
     <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
   </PropertyGroup>
   <ItemGroup>
+    <AndroidResource Remove="Resources\layout\PaymentOption 1.xml" />
+  </ItemGroup>
+  <ItemGroup>
     <None Remove="Resources\drawable\blue_button.xml" />
     <None Remove="Resources\drawable\gray_button.xml" />
     <None Remove="Resources\drawable\images_round.xml" />
@@ -24,6 +27,8 @@
     <None Remove="Resources\layout\Fooddescription4.xml" />
     <None Remove="Resources\layout\Menu.xml" />
     <None Remove="Resources\layout\Orderdetail.xml" />
+    <None Remove="Resources\layout\PaymentOption - Copy.xml" />
+    <None Remove="Resources\layout\PaymentOption 1.xml" />
     <None Remove="Resources\layout\PaymentOption.xml" />
     <None Remove="Resources\layout\Profile1.xml" />
     <None Remove="Resources\layout\Reservation.xml" />
