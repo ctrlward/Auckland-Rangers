@@ -5,10 +5,11 @@
     android:background="@android:color/white">
 
     <!-- Back Button -->
-    <Button
+    <ImageButton
         android:id="@+id/buttonBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:src="@drawable/back_button_image"
         android:text="Back"
         android:textColor="@android:color/black"
         android:background="@android:color/transparent"
@@ -28,179 +29,296 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp" />
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_above="@+id/relativeLayoutOrderNumber"
-        android:id="@+id/relativeLayoutDate">
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textViewTitle">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:id="@+id/relativeLayout1" >
 
-        <TextView
-            android:id="@+id/textViewDate"
-            android:layout_width="230dp"
-            android:layout_height="40dp"
-            android:text="Date"
-            android:textStyle="bold"
-            android:textColor="@android:color/black"
-            android:textSize="20sp"            
-            android:gravity="center_vertical|start"
-            android:paddingStart="16dp"
-            android:layout_marginTop="1dp"
-            android:layout_marginStart="20dp"/>
-        <TextView
-            android:id="@+id/textViewCurrentDate"
-            android:layout_width="320dp"
-            android:layout_height="40dp"
-            android:text="dd-mm-yyyy"
-            android:textStyle="bold"
-            android:layout_toRightOf="@+id/textViewDate"
-            android:textColor="@android:color/black"
-            android:textSize="20sp"            
-            android:gravity="center_vertical|start"
-            android:paddingStart="16dp"
-            android:layout_marginTop="1dp"
-            android:layout_marginStart="10dp"/>        
-    </RelativeLayout>
+                    <!-- Food Image -->
+                    <ImageView
+                        android:id="@+id/Burger2"
+                        android:layout_width="150dp"
+                        android:layout_height="130dp"
+                        android:src="@drawable/burger2"                    
+                        android:layout_alignParentStart="true"/>
 
-    <!-- Total Amount -->
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_above="@+id/buttonProceedToPayment"
-        android:id="@+id/relativeLayoutTotal">
+                    <!-- Name -->
+                    <TextView
+                        android:id="@+id/foodName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Name :"
+                        android:textSize="20sp"
+                        android:paddingStart="15dp"
+                        android:textColor="@android:color/black"
+                        android:layout_toEndOf="@+id/Burger2"/>
 
-        <TextView
-            android:id="@+id/textViewTotal"
-            android:layout_width="230dp"
-            android:layout_height="50dp"
-            android:text="TOTAL"
-            android:textStyle="bold"
-            android:textColor="@android:color/black"
-            android:textSize="25sp"            
-            android:gravity="center_vertical|start"
-            android:paddingStart="16dp"
-            android:layout_marginTop="1dp"
-            android:layout_marginStart="20dp"/>
-        <TextView
-            android:id="@+id/textViewTotalAmount"
-            android:layout_width="320dp"
-            android:layout_height="50dp"
-            android:text="$ "
-            android:textStyle="bold"
-            android:layout_toRightOf="@+id/textViewTotal"
-            android:textColor="@android:color/black"
-            android:textSize="25sp"            
-            android:gravity="center_vertical|start"
-            android:paddingStart="16dp"
-            android:layout_marginTop="1dp"
-            android:layout_marginStart="10dp"/>        
-    </RelativeLayout>
+                    <!-- Size -->
+                    <TextView
+                        android:id="@+id/foodSize"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Size :"
+                        android:textSize="20sp"
+                        android:paddingStart="165dp"
+                        android:layout_marginTop="3dp"
+                        android:textColor="@android:color/black"
+                        android:layout_below="@+id/foodName"/>
 
-    <!-- GST 15% -->
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_above="@+id/relativeLayoutTotal"
-        android:id="@+id/relativeLayoutGST">
+                    <!-- Price -->
+                    <TextView
+                        android:id="@+id/foodPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Price :"
+                        android:textSize="20sp"
+                        android:paddingStart="165dp"
+                        android:layout_marginTop="3dp"
+                        android:textColor="@android:color/black"
+                        android:layout_below="@id/foodSize"/>
 
-        <TextView
-            android:id="@+id/textViewGST"
-            android:layout_width="230dp"
-            android:layout_height="40dp"
-            android:text="GST 15%"
-            android:textStyle="bold"
-            android:textColor="@android:color/black"
-            android:textSize="20sp"            
-            android:gravity="center_vertical|start"
-            android:paddingStart="16dp"
-            android:layout_marginTop="1dp"
-            android:layout_marginStart="20dp"/>
-        <TextView
-            android:id="@+id/textViewTotalGST"
-            android:layout_width="320dp"
-            android:layout_height="40dp"
-            android:text="$ "
-            android:textStyle="bold"
-            android:layout_toRightOf="@+id/textViewGST"
-            android:textColor="@android:color/black"
-            android:textSize="20sp"            
-            android:gravity="center_vertical|start"
-            android:paddingStart="16dp"
-            android:layout_marginTop="1dp"
-            android:layout_marginStart="10dp"/>        
-    </RelativeLayout>
+                    <!-- Quantity Label -->
+                    <TextView
+                        android:id="@+id/foodQuantityLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Quantity"
+                        android:textSize="20sp"
+                        android:paddingStart="165dp"
+                        android:layout_marginTop="9dp"
+                        android:textColor="@android:color/black"
+                        android:layout_below="@id/foodPrice"/>
 
-    <!-- SUBTOTAL -->
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_above="@+id/relativeLayoutGST"
-        android:id="@+id/relativeLayoutSubtotal">
+                    <!-- Quantity Spinner -->
+                    <Spinner
+                        android:id="@+id/foodQuantitySpinner"
+                        android:layout_width="80dp"
+                        android:layout_height="35dp"
+                        android:textSize="20sp"
+                        android:paddingStart="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginTop="95dp"
+                        android:background="@drawable/white_button_border_gray"
+                        android:layout_toRightOf="@+id/foodQuantityLabel"/>
 
-        <TextView
-            android:id="@+id/textViewSubTotal"
-            android:layout_width="230dp"
-            android:layout_height="40dp"
-            android:text="Subtotal"
-            android:textStyle="bold"
-            android:textColor="@android:color/black"
-            android:textSize="20sp"            
-            android:gravity="center_vertical|start"
-            android:paddingStart="16dp"
-            android:layout_marginTop="1dp"
-            android:layout_marginStart="20dp"/>
-        <TextView
-            android:id="@+id/textViewSubTotalAmount"
-            android:layout_width="320dp"
-            android:layout_height="40dp"
-            android:text="$ "
-            android:textStyle="bold"
-            android:layout_toRightOf="@+id/textViewSubTotal"
-            android:textColor="@android:color/black"
-            android:textSize="20sp"            
-            android:gravity="center_vertical|start"
-            android:paddingStart="16dp"
-            android:layout_marginTop="1dp"
-            android:layout_marginStart="10dp"/>        
-    </RelativeLayout>
+                    <!-- Delete Button -->
+                    <Button
+                        android:id="@+id/deleteButton"
+                        android:layout_width="50dp"
+                        android:layout_height="35dp"
+                        android:text="Del"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:layout_marginStart="95dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginTop="95dp"
+                        android:textAllCaps="false"
+                        android:background="@drawable/gray_button"
+                        android:layout_toRightOf="@+id/foodQuantityLabel"/>
 
-    <!-- Order Number -->
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_above="@+id/relativeLayoutSubtotal"
-        android:id="@+id/relativeLayoutOrderNumber">
+                    <!-- Cost -->
+                    <TextView
+                        android:id="@+id/foodCost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$ "
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_marginStart="480dp"                                      
+                        android:layout_marginTop="95dp"
+                        android:textColor="@android:color/black"/>
+                </RelativeLayout>      
+            
+                    <!-- Date -->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="15dp"
+                        android:layout_below="@+id/relativeLayout1"
+                        android:id="@+id/relativeLayoutDate">
+                    <TextView
+                        android:id="@+id/textViewDate"
+                        android:layout_width="230dp"
+                        android:layout_height="wrap_content"
+                        android:text="Date"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:textSize="23sp"            
+                        android:gravity="center_vertical|start"
+                        android:paddingStart="16dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginStart="20dp"/>
+                    <TextView
+                        android:id="@+id/textViewCurrentDate"
+                        android:layout_width="320dp"
+                        android:layout_height="wrap_content"
+                        android:text="dd-mm-yyyy"
+                        android:textStyle="bold"
+                        android:layout_toRightOf="@+id/textViewDate"
+                        android:textColor="@android:color/black"
+                        android:textSize="23sp"            
+                        android:gravity="center_vertical|start"
+                        android:paddingStart="16dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginStart="10dp"/>        
+                    </RelativeLayout>
 
-        <TextView
-            android:id="@+id/textViewOrderNumber"
-            android:layout_width="230dp"
-            android:layout_height="40dp"
-            android:text="Order #"
-            android:textStyle="bold"
-            android:textColor="@android:color/black"
-            android:textSize="20sp"            
-            android:gravity="center_vertical|start"
-            android:paddingStart="16dp"
-            android:layout_marginTop="1dp"
-            android:layout_marginStart="20dp"/>
-        <TextView
-            android:id="@+id/textViewCurrentOrderNumber"
-            android:layout_width="320dp"
-            android:layout_height="40dp"
-            android:text="###### "
-            android:textStyle="bold"
-            android:layout_toRightOf="@+id/textViewOrderNumber"
-            android:textColor="@android:color/black"
-            android:textSize="20sp"            
-            android:gravity="center_vertical|start"
-            android:paddingStart="16dp"
-            android:layout_marginTop="1dp"
-            android:layout_marginStart="10dp"/>        
-    </RelativeLayout>
+                    <!-- Order Number -->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_below="@+id/relativeLayoutDate"
+                        android:id="@+id/relativeLayoutOrderNumber">
+                    <TextView
+                        android:id="@+id/textViewOrderNumber"
+                        android:layout_width="230dp"
+                        android:layout_height="wrap_content"
+                        android:text="Order #"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:textSize="23sp"            
+                        android:gravity="center_vertical|start"
+                        android:paddingStart="16dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginStart="20dp"/>
+                    <TextView
+                        android:id="@+id/textViewCurrentOrderNumber"
+                        android:layout_width="320dp"
+                        android:layout_height="wrap_content"
+                        android:text="###### "
+                        android:textStyle="bold"
+                        android:layout_toRightOf="@+id/textViewOrderNumber"
+                        android:textColor="@android:color/black"
+                        android:textSize="23sp"            
+                        android:gravity="center_vertical|start"
+                        android:paddingStart="16dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginStart="10dp"/>
+                    </RelativeLayout>
+
+                    <!-- SUBTOTAL -->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_below="@+id/relativeLayoutOrderNumber"
+                        android:id="@+id/relativeLayoutSubtotal">
+                    <TextView
+                        android:id="@+id/textViewSubTotal"
+                        android:layout_width="230dp"
+                        android:layout_height="wrap_content"
+                        android:text="Subtotal"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:textSize="23sp"            
+                        android:gravity="center_vertical|start"
+                        android:paddingStart="16dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginStart="20dp"/>
+                    <TextView
+                        android:id="@+id/textViewSubTotalAmount"
+                        android:layout_width="320dp"
+                        android:layout_height="wrap_content"
+                        android:text="$ "
+                        android:textStyle="bold"
+                        android:layout_toRightOf="@+id/textViewSubTotal"
+                        android:textColor="@android:color/black"
+                        android:textSize="23sp"            
+                        android:gravity="center_vertical|start"
+                        android:paddingStart="16dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginStart="10dp"/>        
+                    </RelativeLayout>
+
+                    <!-- GST 15% -->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_below="@+id/relativeLayoutSubtotal"
+                        android:id="@+id/relativeLayoutGST">
+                    <TextView
+                        android:id="@+id/textViewGST"
+                        android:layout_width="230dp"
+                        android:layout_height="wrap_content"
+                        android:text="GST 15%"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:textSize="23sp"            
+                        android:gravity="center_vertical|start"
+                        android:paddingStart="16dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginStart="20dp"/>
+                    <TextView
+                        android:id="@+id/textViewTotalGST"
+                        android:layout_width="320dp"
+                        android:layout_height="wrap_content"
+                        android:text="$ "
+                        android:textStyle="bold"
+                        android:layout_toRightOf="@+id/textViewGST"
+                        android:textColor="@android:color/black"
+                        android:textSize="23sp"            
+                        android:gravity="center_vertical|start"
+                        android:paddingStart="16dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginStart="10dp"/>        
+                    </RelativeLayout>
+
+                    <!-- Total Amount -->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_below="@+id/relativeLayoutGST"
+                        android:id="@+id/relativeLayoutTotal">
+                    <TextView
+                        android:id="@+id/textViewTotal"
+                        android:layout_width="230dp"
+                        android:layout_height="wrap_content"
+                        android:text="TOTAL"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:textSize="25sp"            
+                        android:gravity="center_vertical|start"
+                        android:paddingStart="16dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginStart="20dp"/>
+                    <TextView
+                        android:id="@+id/textViewTotalAmount"
+                        android:layout_width="320dp"
+                        android:layout_height="wrap_content"
+                        android:text="$ "
+                        android:textStyle="bold"
+                        android:layout_toRightOf="@+id/textViewTotal"
+                        android:textColor="@android:color/black"
+                        android:textSize="25sp"            
+                        android:gravity="center_vertical|start"
+                        android:paddingStart="16dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginStart="10dp"/>        
+                    </RelativeLayout>  
+    
+            </LinearLayout>
+
+    </ScrollView>
     
     <!-- Proceed to Payment Button -->
     <Button
@@ -213,7 +331,7 @@
         android:textSize="25sp"
         android:padding="16dp"
         android:textStyle="bold"
-        android:layout_margin="16dp"
+        android:layout_margin="10dp"
         android:layout_above="@+id/navigationSection"
         android:layout_centerHorizontal="true"
         android:textAllCaps="false"/>
@@ -225,34 +343,42 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:background="@android:color/white"
-        android:padding="16dp"
-        android:layout_margin="6dp"
+        android:padding="5dp"
+        android:layout_margin="10dp"
         android:layout_alignParentBottom="true">
 
-        <Button
+        <ImageButton
             android:id="@+id/buttonHome"
             android:layout_width="0dp"
+            android:src="@drawable/home_button_image"
+            android:background="@android:color/white"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Home" />
 
-        <Button
+        <ImageButton
             android:id="@+id/buttonSearch"
             android:layout_width="0dp"
+            android:src="@drawable/search_button_image"
+            android:background="@android:color/white"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Search" />
 
-        <Button
+        <ImageButton
             android:id="@+id/buttonContactUs"
             android:layout_width="0dp"
+            android:src="@drawable/contact_button_image"
+            android:background="@android:color/white"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Contact Us" />
 
-        <Button
+        <ImageButton
             android:id="@+id/buttonProfile"
             android:layout_width="0dp"
+            android:src="@drawable/profile_button_image"
+            android:background="@android:color/white"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Profile" />

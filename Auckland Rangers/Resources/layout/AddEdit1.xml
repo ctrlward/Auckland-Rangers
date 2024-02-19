@@ -5,11 +5,12 @@
     android:background="@android:color/white">
 
     <!-- Back Button -->
-    <Button
+    <ImageButton
         android:id="@+id/buttonBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Back"
+        android:src="@drawable/back_button_image"
         android:textColor="@android:color/black"
         android:background="@android:color/transparent"
         android:layout_alignParentStart="true"
@@ -22,25 +23,24 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Make Reservation"
-        android:textSize="30sp"
+        android:textSize="40sp"
         android:textStyle="bold"
         android:textColor="@android:color/black"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp" />
+        android:layout_centerHorizontal="false"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="70dp" />
 
     <TextView
         android:id="@+id/textAucklandRangers"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Auckland Rangers"
-        android:textSize="30sp"
+        android:textSize="35sp"
         android:textStyle="bold"
         android:textColor="@android:color/black"
-        android:layout_below="@+id/textViewPayment"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
+        android:layout_below="@+id/textViewReservation"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="80dp" />
+        android:layout_marginTop="30dp" />
 
     <ScrollView
             android:layout_width="match_parent"
@@ -59,44 +59,61 @@
                     android:orientation="horizontal"
                     android:background="@android:color/white"
                     android:padding="16dp"
-                    android:layout_margin="10dp"
+                    android:layout_margin="15dp"
                     android:layout_below="@+id/textAucklandRangers"
                     android:layout_alignParentBottom="false">
 
-                    <TextView
-                    android:id="@+id/textlabelSpinner"        
-                    android:layout_width="350dp"
-                    android:layout_height="50dp"
-                    android:layout_alignParentLeft="true"
-                    android:text="Number : "
-                    android:textSize="30sp"
-                    android:textStyle="bold"
-                    android:textColor="@android:color/black"/> 
+                    <FrameLayout
+                        android:id="@+id/frameLayoutNumberSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_below="@id/textAucklandRangers"
+                        android:background="@drawable/gray_button"
+                        android:layout_centerHorizontal="true">
 
-                    <Spinner
-                    android:id="@+id/spinnerNumber"
-                    android:layout_width="200dp"
-                    android:layout_height="50dp"
-                    android:layout_toRightOf="@+id/textlabelSpinner"
-                    android:layout_below="@+id/textAucklandRangers"
-                    android:drawSelectorOnTop="true"/> 
-                
+                        <TextView
+                            android:id="@+id/textlabelSpinner"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Number : "
+                            android:paddingStart="16dp"
+                            android:textSize="25sp"
+                            android:textStyle="bold"
+                            android:textColor="@android:color/black"
+                            android:layout_gravity="start|center_vertical" />
+
+                        <Spinner
+                            android:id="@+id/spinnerNumber"
+                            android:layout_width="120dp"
+                            android:layout_height="50dp"
+                            android:textSize="25sp"
+                            android:background="@drawable/white_button_no_border"
+                            android:paddingEnd="10dp"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:textStyle="bold"
+                            android:layout_gravity="end|center_vertical" />
+                    </FrameLayout>
+
                     <DatePicker
-                        android:layout_width="550dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_below="@+id/spinnerNumber"
-                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/frameLayoutNumberSpinner"
+                        android:layout_marginTop="20dp"
                         android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
                         android:id="@+id/datePicker1" />
                     <TimePicker
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:minWidth="25px"
                         android:minHeight="25px"
-                        android:layout_marginTop="50dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
                         android:layout_below="@+id/datePicker1"
                         android:id="@+id/timePicker1" />
-
                     <EditText
                         android:id="@+id/editTextLists"
                         android:layout_width="match_parent"
@@ -106,7 +123,7 @@
                         android:textSize="30sp"
                         android:textStyle="bold"
                         android:layout_below="@+id/timePicker1"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="15dp"
                         android:layout_marginStart="30dp"
                         android:layout_marginEnd="30dp" />
 
@@ -126,7 +143,7 @@
                         android:layout_below="@+id/editTextLists"
                         android:layout_centerHorizontal="true"
                         android:textAllCaps="false"/>
-    
+
                     <Button
                         android:id="@+id/buttonEdit"
                         android:layout_width="match_parent"
@@ -144,10 +161,10 @@
                         android:layout_centerHorizontal="true"
                         android:textAllCaps="false"/>
 
-                </RelativeLayout>                           
+                </RelativeLayout>
 
             </LinearLayout>
-        
+
         </ScrollView>
 
 </RelativeLayout>

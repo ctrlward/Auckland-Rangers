@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="match_parent"    
     android:background="@android:color/white">
 
     <ImageView
@@ -42,13 +42,11 @@
         android:text="Register Now"
         android:textSize="40sp"
         android:textStyle="bold"
-        android:textColor="@android:color/black"
-        android:layout_Horizontal="true"
-        android:layout_below="@id/txt1"
-        android:layout_marginTop="22dp"
+        android:textColor="@android:color/black"       
+        android:layout_below="@+id/txt1"
+        android:layout_marginTop="20dp"
         android:paddingStart="40dp"
-        android:paddingEnd="16dp"
-        android:paddingBottom="16dp"/>
+        />
 
     <!-- Username EditText -->
     <EditText
@@ -60,6 +58,7 @@
         android:background="@drawable/white_button_border"
         android:textSize="25sp"       
         android:layout_below="@id/textViewMyAccount"
+        android:paddingStart="15dp"
         android:layout_marginTop="10dp"
         android:layout_marginStart="40dp"
         android:layout_marginEnd="40dp" />
@@ -72,9 +71,10 @@
         android:hint="  Password*"
         android:textColorHint="@android:color/darker_gray"
         android:background="@drawable/white_button_border"
+        android:paddingStart="15dp"
         android:textSize="25sp"       
         android:layout_below="@+id/editTextUsername"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="10dp"
         android:layout_marginStart="40dp"
         android:layout_marginEnd="40dp" />
 
@@ -89,10 +89,11 @@
                 android:layout_width="240dp"
                 android:layout_height="60dp"
                 android:hint="  First Name*"
+                android:paddingStart="15dp"
                 android:textColorHint="@android:color/darker_gray"
                 android:background="@drawable/white_button_border"
                 android:textSize="25sp"                
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginStart="40dp"/>
 
             <EditText
@@ -100,11 +101,12 @@
                 android:layout_width="270dp"
                 android:layout_height="60dp"
                 android:hint="  Last Name*"
+                android:paddingStart="15dp"
                 android:layout_toRightOf="@+id/editTextFirstName"
                 android:textColorHint="@android:color/darker_gray"
                 android:background="@drawable/white_button_border"
                 android:textSize="25sp"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginStart="10dp"/>
 
              <EditText
@@ -112,11 +114,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:hint="  Mobile Number*"
+                android:paddingStart="15dp"
                 android:textColorHint="@android:color/darker_gray"
                 android:background="@drawable/white_button_border"
                 android:textSize="25sp"
                 android:layout_below="@+id/editTextFirstName"
-                android:layout_marginTop="15dp"        
+                android:layout_marginTop="10dp"        
                 android:layout_marginStart="40dp"
                 android:layout_marginEnd="40dp" />
             <EditText
@@ -124,11 +127,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:hint="  Email Address*"
+                android:paddingStart="15dp"
                 android:textColorHint="@android:color/darker_gray"
                 android:background="@drawable/white_button_border"
                 android:textSize="25sp"
                 android:layout_below="@+id/editTextMobileNumber"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginStart="40dp"
                 android:layout_marginEnd="40dp" />
     
@@ -142,8 +146,8 @@
                 android:background="@drawable/blue_button"
                 android:textColor="@android:color/black"
                 android:padding="16dp"
-                android:layout_margin="40dp"
-                android:layout_marginTop="50dp"
+                android:layout_margin="35dp"
+                android:layout_marginTop="20dp"
                 android:layout_below="@+id/editTextEmailAddress"
                 android:layout_centerHorizontal="true"
                 android:textAllCaps="false"/>

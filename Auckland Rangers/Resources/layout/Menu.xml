@@ -1,139 +1,296 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/widget0"
-    android:background="@android:color/white"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
-    <TextView
-        android:layout_width="match_parent"
-        android:text="Auckland Rangers"
-        android:layout_height="70dp"
-        android:gravity="center"
-        android:id="@+id/txtName"
-        android:textColor="@android:color/background_dark"
-        android:textSize="30dp"
-        android:textStyle="bold" 
-        />
-    <ImageView
-        android:id="@+id/imgFoods"
-        android:layout_marginTop="70dp"
-        android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:src="@drawable/menuscreenpic1"
-        android:layout_x="180dp"
-        android:layout_y="50dp"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:layout_marginTop="320dp"
-        android:text="Explore"
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <!-- Next Button -->
+    <ImageButton
+        android:id="@+id/buttonCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cart_button_image"   
         android:textColor="@android:color/black"
-        android:textSize="25dp"
-        android:textStyle="bold"
-        android:layout_marginLeft="30dp" 
-        />
-    <Button
-        android:text="Reservation"
-        android:layout_marginTop="370dp"
-        android:layout_marginLeft="90dp"
-        android:layout_width="170dp"
-        android:layout_height="60dp"
-        android:id="@+id/button1"
-        />
-    <Button
-        android:text="Menu List"
-        android:layout_marginTop="370dp"
-        android:layout_marginLeft="350dp"
-        android:layout_width="170dp"
-        android:layout_height="60dp"
-        android:id="@+id/button2"
-        android:textStyle="bold" />
+        android:background="@android:color/transparent"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Heading-->
     <TextView
-        android:layout_width="467.0dp"
-        android:layout_height="163.0dp"
-        android:layout_marginTop="470dp"
-        android:text="   Specials"
-        android:textColor="@android:color/white"
-        android:textSize="35dp"
+        android:id="@+id/textViewTitleCompany"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Auckland Rangers"
+        android:textSize="35sp"
         android:textStyle="bold"
-        android:layout_marginLeft="70dp"
-        android:background="#ff7bb9fb" />
-    <TextView
-        android:layout_width="415.0dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="520dp"
-        android:text="Discover our lastest offers"
-        android:textColor="@android:color/white"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        android:layout_marginLeft="100dp" />
-    <TextView
-        android:layout_width="407.5dp"
-        android:layout_height="41.5dp"
-        android:layout_marginTop="590dp"
-        android:text="See more ->"
-        android:textColor="@android:color/white"
-        android:textSize="25dp"
-        android:textStyle="bold"
-        android:layout_marginLeft="100dp" />
+        android:textColor="@android:color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <ImageView      
+        android:layout_width="wrap_content"
+        android:layout_height="160dp"        
+        android:background="@drawable/image_round_corner"
+        android:src="@drawable/buffet"
+        android:scaleType="centerCrop"
+        android:layout_below="@+id/textViewTitleCompany"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/imageView1" />
+
+    <LinearLayout
+        android:id="@+id/imageSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:color/white"       
+        android:layout_below="@+id/imageView1"
+        android:layout_margin="5dp">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="5dp"
+            android:layout_height="110dp"            
+            android:layout_margin="5dp"
+            android:background="@drawable/burger"            
+            android:layout_weight="0.5"
+            />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="5dp"
+            android:layout_height="110dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/burger2"            
+            android:layout_weight="0.5"
+            />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="5dp"
+            android:layout_height="110dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/burger2"            
+            android:layout_weight="0.5"
+            />       
+    </LinearLayout>   
+
+        <FrameLayout
+            android:id="@+id/frameLayoutPromo"
+            android:layout_width="match_parent"
+            android:layout_height="360dp"
+            android:layout_marginStart="25dp"            
+            android:layout_below="@+id/imageSection"
+            android:background="@drawable/light_blue_color_round"
+            android:layout_centerHorizontal="true">
+
         <TextView
-        android:layout_width="match_parent"
-        android:layout_marginTop="610dp"
-        android:text="..."
-        android:layout_height="70dp"
-        android:gravity="center"
-        android:textColor="@android:color/background_dark"
-        android:textSize="60dp"
-        android:textStyle="bold" />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_marginTop="680dp"
-        android:layout_marginLeft="30dp"
-        android:text="Featured items"
-        android:layout_height="70dp"
-        android:textColor="@android:color/background_dark"
-        android:textSize="25dp"
-        android:textStyle="bold" />
+            android:id="@+id/textViewExplore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Explore"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:textColor="@android:color/black"      
+            android:layout_marginStart="20dp" />
+        <TextView
+            android:id="@+id/textViewMoreOptions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="More options"
+            android:textSize="20sp"            
+            android:layout_marginTop="5dp"            
+            android:textColor="@android:color/black"      
+            android:layout_marginStart="440dp" />
+
+                    <!-- Layout -->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_below="@+id/textViewExplore"
+                        android:id="@+id/relativeLayoutButtons">           
+                        <Button
+                            android:id="@+id/buttonReservations"
+                            android:layout_width="190dp"
+                            android:layout_height="65dp"
+                            android:text="Reservations"
+                            android:textSize="20sp"        
+                            android:background="@drawable/white_button_border"
+                            android:textColor="@android:color/black"
+                            android:padding="20dp"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginStart="60dp"
+                            android:layout_marginEnd="60dp"                                           
+                            android:textAllCaps="false"/>
+                        <Button
+                            android:id="@+id/buttonMenuLists"
+                            android:layout_width="190dp"
+                            android:layout_height="65dp"
+                            android:text="Menu List"
+                            android:textSize="20sp"        
+                            android:background="@drawable/white_button_border"
+                            android:textColor="@android:color/black"
+                            android:padding="20dp"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginStart="320dp"
+                            android:layout_marginEnd="60dp"                                           
+                            android:textAllCaps="false"/>
+                    </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textViewFeaturedItems"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Featured items"
+            android:textSize="20sp"     
+            android:layout_marginTop="130dp"
+            android:textColor="@android:color/black"      
+            android:layout_marginStart="20dp" />
+         <TextView
+            android:id="@+id/textViewAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View all"
+            android:textSize="20sp"            
+            android:layout_marginTop="130dp"            
+            android:textColor="@android:color/black"      
+            android:layout_marginStart="490dp" />
+
+        <FrameLayout
+            android:id="@+id/frameLayoutFeature1"
+            android:layout_width="200dp"
+            android:layout_height="170dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="170dp"
+            android:layout_below="@+id/imageSection"
+            android:background="@drawable/gray_button">
+
+            <ImageView
+            android:id="@+id/imageView41"
+            android:layout_width="170dp"
+            android:layout_height="95dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/food_feature_1" />
+
+            <TextView
+            android:id="@+id/textViewFeature1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" $10 off "
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:background="@android:color/white"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="120dp"            
+            android:textColor="@android:color/black"      
+            />
+            <ImageButton
+            android:id="@+id/buttonCartFeature1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cart_button_image"
+            android:text="Back"
+            android:textColor="@android:color/black"
+            android:background="@drawable/white_button_border"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="116dp"/>            
+            </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frameLayoutFeature2"
+            android:layout_width="200dp"
+            android:layout_height="170dp"
+            android:layout_marginStart="310dp"
+            android:layout_marginTop="170dp"
+            android:layout_below="@+id/imageSection"
+            android:background="@drawable/gray_button">
+
+            <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="170dp"
+            android:layout_height="95dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/food_feature_2" />
+
+            <TextView
+            android:id="@+id/textViewFeature2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" $5 only "
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:background="@android:color/white"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="120dp"            
+            android:textColor="@android:color/black"      
+            />
+            <ImageButton
+            android:id="@+id/buttonCartFeature2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cart_button_image"           
+            android:textColor="@android:color/black"
+            android:background="@drawable/white_button_border"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="116dp"/>
+
+            </FrameLayout>
+
+        </FrameLayout>
+
+
+    <!-- Navigation Section -->
     <LinearLayout
         android:id="@+id/navigationSection"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:background="@android:color/white"
-        android:padding="16dp"
-        android:layout_margin="16dp"
+        android:padding="5dp"
+        android:layout_margin="10dp"        
         android:layout_alignParentBottom="true">
 
-        <Button
+        <ImageButton
             android:id="@+id/buttonHome"
             android:layout_width="0dp"
+            android:src="@drawable/home_button_image"
+            android:background="@android:color/white"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Home"/>
+            android:text="Home" />
 
-        <Button
+        <ImageButton
             android:id="@+id/buttonSearch"
             android:layout_width="0dp"
+            android:src="@drawable/search_button_image"
+            android:background="@android:color/white"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Search" />
 
-        <Button
+        <ImageButton
             android:id="@+id/buttonContactUs"
             android:layout_width="0dp"
+            android:src="@drawable/contact_button_image"
+            android:background="@android:color/white"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Contact Us" />
 
-        <Button
+        <ImageButton
             android:id="@+id/buttonProfile"
             android:layout_width="0dp"
+            android:src="@drawable/profile_button_image"
+            android:background="@android:color/white"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Profile" />
     </LinearLayout>
-    
-        
 
 </RelativeLayout>
